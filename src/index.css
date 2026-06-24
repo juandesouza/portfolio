@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+:root {
+  --text: #9494a8;
+  --text-h: #eeeef5;
+  --bg: #08080f;
+  --border: #1e1e2e;
+  --code-bg: #111118;
+  --accent: #7c6df0;
+  --accent-bg: rgba(124, 109, 240, 0.12);
+  --accent-border: rgba(124, 109, 240, 0.35);
+
+  --sans: 'DM Sans', system-ui, sans-serif;
+  --heading: 'Syne', system-ui, sans-serif;
+
+  font: 16px/150% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-padding-bottom: max(2rem, env(safe-area-inset-bottom, 0px));
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow: visible;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}
