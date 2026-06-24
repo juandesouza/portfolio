@@ -1,5 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from 'react'
 import type { Project } from '../data/projects'
+import { publicAsset } from '../lib/publicAsset'
 import './Carousel3D.css'
 
 const SWIPE_THRESHOLD = 50
@@ -179,7 +180,7 @@ export default function Carousel({ projects }: CarouselProps) {
                         aria-label={`Open ${project.name} live app`}
                       >
                         <img
-                          src={project.screenshot}
+                          src={publicAsset(project.screenshot)}
                           alt={`${project.name} screenshot`}
                           draggable={false}
                         />

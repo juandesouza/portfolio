@@ -1,4 +1,5 @@
 import './AboutSection.css'
+import { publicAsset } from '../lib/publicAsset'
 
 export default function AboutSection() {
   return (
@@ -7,9 +8,9 @@ export default function AboutSection() {
         <div className="about-text">
           <p className="about-eyebrow">About me</p>
           <picture className="about-photo">
-            <source srcSet="/about/juan1.webp" type="image/webp" />
+            <source srcSet={publicAsset('/about/juan1.webp')} type="image/webp" />
             <img
-              src="/about/juan1.png"
+              src={publicAsset('/about/juan1.png')}
               alt="Juan de Souza"
               width={480}
               height={721}
