@@ -41,11 +41,13 @@ export default function AboutSection() {
           </p>
 
           <p className="about-body">
-            Every full-stack developer knows that it&apos;s a problem when we
-            have to solve so much problems involving front, back and db. But now
-            that AI holds the knowledge of all the programming languages, it
-            made the life of the full-stack developer so much easier, allowing
-            us to focus more on the logic and main aspects of the app.
+            Full-stack developers know that it&apos;s a challenge when we have to
+            solve so much problems involving front, back and db. But now that AI
+            holds the knowledge of all the programming languages, it made the
+            life of the full-stack developer so much easier, and the development
+            process so much faster, allowing us to focus more on the logic and
+            main aspects of the app. In an age when anybody can build anything,
+            the ones with the best vision stay ahead.
           </p>
         </div>
       </div>
