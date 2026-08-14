@@ -1,6 +1,46 @@
 import './AboutSection.css'
 import { publicAsset } from '../lib/publicAsset'
 
+const experience = [
+  {
+    label: 'Frontend',
+    value:
+      "Pixel-perfect UI implementation using Cursor's Figma MCP, TypeScript, JavaScript, React, Next.js, SvelteKit, React Native, Expo, Design System, Tailwind CSS, Shadcn, Zustand, Redux Toolkit, Context API, PWA, Leaflet, Mapbox, Socket.IO (client), Google OAuth, HTML, CSS",
+  },
+  {
+    label: 'Frontend services',
+    value: 'Vercel, Netlify, Render',
+  },
+  {
+    label: 'Backend',
+    value: 'Node.js, NestJS, Express, REST APIs, Socket.IO, Git, GitHub, Docker',
+  },
+  {
+    label: 'Backend services',
+    value: 'Render, Railway',
+  },
+  {
+    label: 'Database',
+    value: 'PostgreSQL, MongoDB',
+  },
+  {
+    label: 'Database services',
+    value: 'Supabase, nHost, MongoDB Atlas, Neon, Render',
+  },
+  {
+    label: 'Payment services',
+    value: 'Stripe, Lemon Squeezy, Braintree',
+  },
+  {
+    label: 'AI / workflow',
+    value: 'Cursor',
+  },
+  {
+    label: 'OS',
+    value: 'MXLinux (Debian)',
+  },
+] as const
+
 export default function AboutSection() {
   return (
     <section className="about-section" id="about">
@@ -18,36 +58,27 @@ export default function AboutSection() {
               decoding="async"
             />
           </picture>
-          <h2 className="about-title">Building products end to end</h2>
-          <p className="about-body">
-            I&apos;m a prompt engineer with focus on full-stack web and mobile
-            development, who enjoys taking ideas from sketch to production. I
-            build web and mobile applications with a focus on clean
-            architecture, thoughtful UX, and reliable backends.
-          </p>
-
-          <p className="about-headline">
-            From Coding to Prompt Engineering with focus on web and mobile
-            development
-          </p>
+          <h2 className="about-title">Building digital products e2e</h2>
 
           <p className="about-body">
-            After 9 years of studying full-stack web and mobile development, I
-            discovered AI and decided to switch my efforts from programming to
-            learning how to control AI to develop what I want. I&apos;ve tried
-            several AI tools, and the one that worked the best for me and that I
-            felt the most powerful was Cursor and that&apos;s the tool I use for
-            building full-stack apps.
+            9+ years studying web development technologies
+            <br />
+            1+ year developing AI-first web &amp; mobile full-stack applications
           </p>
 
-          <p className="about-body">
-            Full-stack developers know that it&apos;s a challenge when we have to
-            solve so much problems involving front, back and db. But now that AI
-            holds the knowledge of all the programming languages, it made the
-            life of the full-stack developer so much easier, and the development
-            process so much faster, allowing us to focus more on the logic and
-            main aspects of the app. In an age when anybody can build anything,
-            the ones with the best vision stay ahead.
+          <p className="about-headline">Experience in</p>
+
+          <ul className="about-experience">
+            {experience.map((item) => (
+              <li key={item.label}>
+                <strong>{item.label}:</strong> {item.value}
+              </li>
+            ))}
+          </ul>
+
+          <p className="about-body about-body--knowledge">
+            <strong>Knowledge in:</strong> Python, Rust, Blockchain, Web3,
+            Polkadot, Substrate
           </p>
         </div>
       </div>

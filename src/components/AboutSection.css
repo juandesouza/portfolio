@@ -114,6 +114,37 @@
     0 0 32px rgba(8, 8, 15, 0.6);
 }
 
+.about-experience {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.about-experience li {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-shadow:
+    0 1px 8px rgba(8, 8, 15, 0.85),
+    0 0 20px rgba(8, 8, 15, 0.5);
+}
+
+.about-experience strong,
+.about-body--knowledge strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.about-body--knowledge {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .about-section {
     padding: 2.5rem 1.25rem 2rem;
