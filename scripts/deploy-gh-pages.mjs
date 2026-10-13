@@ -3,7 +3,7 @@ import { writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 const distDir = join(process.cwd(), 'dist')
-const repo = 'https://github.com/juandesouza/portfolio.git'
+const repo = 'git@github.com:juandesouza/portfolio.git'
 
 writeFileSync(join(distDir, '.nojekyll'), '')
 

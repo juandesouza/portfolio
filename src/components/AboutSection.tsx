@@ -1,5 +1,4 @@
 import './AboutSection.css'
-import { publicAsset } from '../lib/publicAsset'
 
 const experience = [
   {
@@ -47,17 +46,6 @@ export default function AboutSection() {
       <div className="about-inner">
         <div className="about-text">
           <p className="about-eyebrow">About me</p>
-          <picture className="about-photo">
-            <source srcSet={publicAsset('/about/juan1.webp')} type="image/webp" />
-            <img
-              src={publicAsset('/about/juan1.png')}
-              alt="Juan de Souza"
-              width={480}
-              height={721}
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
           <h2 className="about-title">Building digital products e2e</h2>
 
           <p className="about-body">

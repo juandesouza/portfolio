@@ -51,27 +51,6 @@
     0 0 20px rgba(8, 8, 15, 0.5);
 }
 
-.about-photo {
-  display: block;
-  width: min(220px, 55vw);
-  margin: 0 auto 1.5rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  border: 1px solid rgba(124, 109, 240, 0.25);
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(255, 255, 255, 0.06);
-}
-
-.about-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 480 / 721;
-  object-fit: cover;
-  object-position: center top;
-}
-
 .about-title {
   font-family: var(--heading);
   font-size: clamp(1.8rem, 4vw, 2.5rem);
@@ -148,20 +127,6 @@
 @media (max-width: 768px) {
   .about-section {
     padding: 2.5rem 1.25rem 2rem;
-  }
-
-  .about-photo {
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: 480 / 430;
-  }
-
-  .about-photo img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: unset;
-    object-fit: cover;
-    object-position: top center;
   }
 
   .about-headline {
