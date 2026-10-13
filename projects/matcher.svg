@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#130f1a"/>
+  <rect x="40" y="40" width="720" height="420" rx="12" fill="#1a1225" stroke="#a855f7" stroke-width="2"/>
+  <rect x="60" y="60" width="100" height="100" rx="50" fill="#3b0764" stroke="#a855f7" stroke-width="2"/>
+  <rect x="180" y="80" width="200" height="16" rx="4" fill="#2e1065"/>
+  <rect x="180" y="108" width="160" height="12" rx="2" fill="#1e1b2e"/>
+  <rect x="580" y="70" width="140" height="80" rx="40" fill="#7c3aed"/>
+  <rect x="60" y="200" width="320" height="220" rx="8" fill="#1e1033" stroke="#7c3aed" stroke-width="1"/>
+  <rect x="400" y="200" width="340" height="100" rx="8" fill="#1e1033" stroke="#7c3aed" stroke-width="1"/>
+  <rect x="400" y="320" width="340" height="100" rx="8" fill="#1e1033" stroke="#7c3aed" stroke-width="1"/>
+  <text x="400" y="460" text-anchor="middle" fill="#c084fc" font-family="system-ui,sans-serif" font-size="28" font-weight="700">MATCHER</text>
+</svg>
